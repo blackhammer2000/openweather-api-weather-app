@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="weather.css" />
+    <title>WEATHER APP</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <input
+          data-city-name
+          type="text"
+          placeholder="Enter City Name"
+          required
+        />
+        <button data-get-weather type="submit">&#x1F50D;</button>
+      </form>
+      <div class="time-skycon">
+        <h1 class="timezone">
+          <span data-city></span> / <span data-country></span>
+        </h1>
+        <div class="skycon">
+          <img data-skycon src="" alt="weather icon image" />
+        </div>
+      </div>
+      <div class="temp-description">
+        <h5 class="temperature">
+          <span data-temperature></span> <span data-temp-symbol>°C</span>
+        </h5>
+        <p data-temperature-description class="temp-description-text"></p>
+      </div>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>

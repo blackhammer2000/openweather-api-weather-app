@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  position: relative;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: linear-gradient(to bottom, rgb(47, 150, 163), rgb(48, 62, 143));
+}
+
+.container {
+  height: 100vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
+form {
+  position: absolute;
+  top: 0;
+  left: 3;
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+}
+
+form input {
+  padding: 5px;
+  outline: none;
+  border: none;
+}
+
+form button {
+  padding: 3.8px;
+  margin-left: 1.5%;
+  margin-top: 0.5%;
+  outline: none;
+  border: none;
+}
+
+form button:hover {
+  background: white;
+}
+
+.time-skycon {
+  width: 80vw;
+  height: calc(80vw / 4);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.skycon {
+  width: 250px;
+  height: 250px;
+  display: grid;
+  place-items: center;
+}
+
+.skycon img {
+  width: 200px;
+  height: 200px;
+}
+
+.temp-description {
+  width: 80vw;
+  height: calc(80vw / 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.temp-description span {
+  font-size: 2rem;
+}
+
+.temperature {
+  font: 700;
+  font-size: 1.5rem;
+}
+
+.temp-description-text {
+  font-size: 1.2rem;
+  font: 500;
+}
