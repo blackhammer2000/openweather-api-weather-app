@@ -117,6 +117,8 @@ window.addEventListener("load", () => {
     }
   }
 
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
   function getWeatherUpdateEnter(event) {
     event.preventDefault();
     const cityName = document.querySelector("[data-city-name]").value;
@@ -124,6 +126,8 @@ window.addEventListener("load", () => {
 
     if (cityName) {
       getresults();
+    } else {
+      document.write("City not available, try another one.");
     }
 
     function getresults() {
